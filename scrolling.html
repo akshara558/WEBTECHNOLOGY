@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling and Blinking Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        marquee {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .blinking-text {
+            font-size: 18px;
+            color: #ff0000; /* red color */
+            animation: blink 1s infinite; /* blink animation */
+        }
+
+        @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+       Hello Guys,Iam Akshara.....
+    </marquee>
+
+    <p class="blinking-text">Don't Skip this page</p>
+
+</body>
+</html>
